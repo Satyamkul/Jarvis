@@ -5,6 +5,20 @@
   box-sizing: border-box;
   font-family: "Roboto Mono", monospace;
 }
+/* Scroll-bar css */
+html {
+  overflow-x: hidden;
+}
+html::-webkit-scrollbar {
+  width: .6rem;
+}
+html::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.144);
+}
+html::-webkit-scrollbar-thumb {
+  background: #69f1f1;
+}
+/* scroll bar css end */
 body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -19,12 +33,9 @@ body {
   min-height: 100vh;
   background-color: #171616;
   margin: 0;
-
-  overflow-y: hidden; /* Hide vertical scrollbar */
-  overflow-x: hidden; /* Hide horizontal scrollbar */
 }
 .main {
-  min-height: 100vh;
+  min-height: 120vh;
   position: relative;
   width: 100%;
   background: #000000;
@@ -58,7 +69,7 @@ body {
 }
 
 .main .image-container p {
-  color: #324042;
+  color: #556062;
   text-align: center;
   margin-bottom: 40px;
 }
@@ -526,11 +537,11 @@ body {
 
 .main .input .talk i {
   font-size: 20px;
-  color: #aed0d0;
+  color: #2e3131;
 }
 
 .main .input .content {
-  color: #aed0d0;
+  color: #0af5f5;
   font-size: 15px;
   margin-right: 20px;
 }
